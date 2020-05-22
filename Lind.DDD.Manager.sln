@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lind.DDD.Manager", "Lind.DDD.Manager.csproj", "{54D3E7B3-A5B2-4E2B-8A1A-2A3F38D818AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lind.DDD.Manager", "Lind.DDD.Manager\Lind.DDD.Manager.csproj", "{54D3E7B3-A5B2-4E2B-8A1A-2A3F38D818AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
