@@ -10,6 +10,9 @@ using Lind.DDD.Filters;
 
 namespace Lind.DDD.Manager.Controllers
 {
+    /// <summary>
+    /// 部门控制
+    /// </summary>
     public class WebDeptController : BaseController
     {
         [ActionAuthority(Authority.Detail), ManagerActionLoggerAttribute("部门列表")]

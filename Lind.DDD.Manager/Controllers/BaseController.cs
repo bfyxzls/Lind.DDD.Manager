@@ -11,6 +11,9 @@ using System.Web.Mvc;
 
 namespace Lind.DDD.Manager.Controllers
 {
+    /// <summary>
+    /// 控制器基类
+    /// </summary>
     public abstract class BaseController : Controller
     {
         protected readonly IExtensionRepository<WebManageMenus> menuRepository;

@@ -12,6 +12,9 @@ using System.Web.Mvc.Html;
 
 namespace Lind.DDD.Manager.Controllers
 {
+    /// <summary>
+    /// 操作权限管理
+    /// </summary>
     public class WebAuthorityCommandController : BaseController
     {
         public ActionResult Index(int page = 1)

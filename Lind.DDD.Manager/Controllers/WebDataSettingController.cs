@@ -12,6 +12,9 @@ using Lind.DDD.Filters;
 
 namespace Lind.DDD.Manager.Controllers
 {
+    /// <summary>
+    /// 数据集权限控制
+    /// </summary>
     public class WebDataSettingController : BaseController
     {
         [ActionAuthority(Authority.Detail), ManagerActionLoggerAttribute("数据集列表")]

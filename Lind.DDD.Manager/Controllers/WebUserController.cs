@@ -15,7 +15,9 @@ using System.Linq.Expressions;
 namespace Lind.DDD.Manager.Controllers
 {
 
-
+    /// <summary>
+    /// 用户管理
+    /// </summary>
     public class WebUserController : BaseController
     {
         public WebUserController()

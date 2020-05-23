@@ -10,6 +10,9 @@ using Lind.DDD.Filters;
 
 namespace Lind.DDD.Manager.Controllers
 {
+    /// <summary>
+    /// 菜单控制
+    /// </summary>
     public class WebMenuController : BaseController
     {
         [ActionAuthority(Authority.Detail), ManagerActionLoggerAttribute("菜单列表")]

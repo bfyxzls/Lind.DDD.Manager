@@ -7,6 +7,9 @@ using System.Web.Mvc;
 
 namespace Lind.DDD.Manager.Controllers
 {
+    /// <summary>
+    /// 操作日志控制
+    /// </summary>
     public class WebLoggerController : BaseController
     {
         public ActionResult Index(string controllerName, DateTime? startDate, DateTime? endDate, int page = 1)

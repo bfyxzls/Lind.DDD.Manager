@@ -11,7 +11,7 @@ using System.Web.Mvc;
 namespace Lind.DDD.Manager.Controllers
 {
     /// <summary>
-    /// 数据集控制
+    /// 数据集类型
     /// </summary>
     public class WebDataCtrlController : BaseController
     {

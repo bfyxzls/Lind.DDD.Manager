@@ -600,42 +600,7 @@ namespace Lind.DDD.Manager
                         }
                     }
                 });
-                menu.Sons.Add(systemMenu);
-
-                systemMenu.Sons.Add(new WebManageMenus
-                {
-                    About = "",
-                    LinkUrl = "",
-                    Level = 2,
-                    Name = "拥有者(数据建立者)管理",
-                    Operator = "admin",
-                    ParentID = null,
-                    SortNumber = 0,
-                    Sons = new List<WebManageMenus>
-                    {
-                        new WebManageMenus{
-                           About = "",
-                           LinkUrl = "/Owner/Index",
-                           Level = 3,
-                           Name = "拥有者列表",
-                           Operator = "admin",
-                           ParentID = null,
-                           SortNumber = 0,
-                           Authority=(long)(Authority.Edit|Authority.Detail)
-                        },
-                        new WebManageMenus{
-                           About = "",
-                           LinkUrl = "/Owner/Edit",
-                           Level = 3,
-                           Name = "编辑拥有者",
-                           Operator = "admin",
-                           ParentID = null,
-                           SortNumber = 1,
-                           IsDisplayMenuTree=false,
-                           Authority=(long)(Authority.Edit|Authority.Detail)
-                        }
-                    }
-                });
+              
                 menu.Sons.Add(systemMenu);
                 #endregion
 
