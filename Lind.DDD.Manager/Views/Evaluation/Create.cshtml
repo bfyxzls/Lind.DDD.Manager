@@ -1,0 +1,11 @@
+﻿@model  Lind.DDD.Manager.Models.Evaluation
+@{
+    ViewBag.Title = "添加评论";
+}
+@Html.BindToFormMore(Model,null
+        , i => i.Id
+        , i => i.Star
+        , i => i.Content
+        , i => i.evaluateName)
+
+@Scripts.Render("~/bundles/jqueryval")

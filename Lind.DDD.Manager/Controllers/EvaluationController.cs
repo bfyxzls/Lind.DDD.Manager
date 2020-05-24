@@ -1,4 +1,7 @@
-﻿using Lind.DDD.IRepositories;
+﻿using Lind.DDD.Authorization;
+using Lind.DDD.Filters;
+using Lind.DDD.IRepositories;
+using Lind.DDD.Manager.Filters;
 using Lind.DDD.Manager.Models;
 using System;
 using System.Collections.Generic;
@@ -43,18 +46,20 @@ namespace Lind.DDD.Manager.Controllers
         }
 
         // POST: Evaluation/Create
+        [ManagerActionLoggerAttribute("添加评论")]
+        [ActionAuthority(Authority.Create)]
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Evaluation entity)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add insert logic here
-
+                evaluationRepository.Insert(entity);
                 return RedirectToAction("Index");
             }
-            catch
+            else
             {
-                return View();
+                ModelState.AddModelError("", "请把表单填写完整...");
+                return View(entity);
             }
         }
 

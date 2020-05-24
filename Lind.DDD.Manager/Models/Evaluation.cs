@@ -21,18 +21,22 @@ namespace Lind.DDD.Manager.Models
         /// <summary>
         /// 星级
         /// </summary>
+      [DisplayName("星级")]
         public int Star { get; set; }
         /// <summary>
         /// 内容
         /// </summary>
+        [DisplayName("内容")]
         public String Content { get; set; }
         /// <summary>
         /// 评价人ID
         /// </summary>
+        [DisplayName("评价人ID")]
         public int evaluateUserId { get; set; }
         /// <summary>
         /// 评价人名字
         /// </summary>
+        [DisplayName("评价人名字")]
         public String evaluateName { get; set; }
     }
 }

@@ -37,6 +37,7 @@ namespace Lind.DDD.Manager
         public DbSet<WebLogger> WebLogger { get; set; }
         public DbSet<WebCommonAreas> WebCommonAreas { get; set; }
         public DbSet<Lind.DDD.Domain.WebAuthorityCommands> WebAuthorityCommands { get; set; }
+        public DbSet<Evaluation> Evaluation { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

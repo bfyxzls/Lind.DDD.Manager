@@ -9,8 +9,7 @@ namespace Lind.DDD.Manager.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            AutomaticMigrationDataLossAllowed = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(Lind.DDD.Manager.ManagerContext context)

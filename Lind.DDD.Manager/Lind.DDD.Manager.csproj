@@ -242,6 +242,14 @@
     <Compile Include="ManagerContext.cs" />
     <Compile Include="ManagerEfRepository.cs" />
     <Compile Include="ManagerInitializer.cs" />
+    <Compile Include="Migrations\202005240456196_20200524.cs" />
+    <Compile Include="Migrations\202005240456196_20200524.Designer.cs">
+      <DependentUpon>202005240456196_20200524.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005240458199_2020052402.cs" />
+    <Compile Include="Migrations\202005240458199_2020052402.Designer.cs">
+      <DependentUpon>202005240458199_2020052402.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Evaluation.cs" />
     <Compile Include="Models\WebCommonAreas.cs" />
@@ -303,9 +311,9 @@
     <Content Include="Views\LindAdmin\WebLogger\Index.cshtml" />
     <Content Include="Views\LindAdmin\AdminCommon\Dept_Role_SelectList.cshtml" />
     <Content Include="Views\LindAdmin\AdminCommon\Dept_SelectList.cshtml" />
-    <Content Include="Views\LindAdmin\Owner\Index.cshtml" />
-    <Content Include="Views\LindAdmin\Owner\Edit.cshtml" />
     <Content Include="Views\LindAdmin\WebAuthorityCommand\AuthorityAction.cshtml" />
+    <Content Include="Views\Evaluation\Create.cshtml" />
+    <Content Include="Views\Evaluation\Index.cshtml" />
     <TransformFile Include="ConfigConstants.xml" />
     <Content Include="Content\bootstraps\CSS\bootstrap-ie6.css" />
     <Content Include="Content\bootstraps\CSS\ie.css" />
@@ -485,12 +493,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Evaluation\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202005240456196_20200524.resx">
+      <DependentUpon>202005240456196_20200524.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005240458199_2020052402.resx">
+      <DependentUpon>202005240458199_2020052402.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
