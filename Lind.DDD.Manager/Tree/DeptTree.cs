@@ -12,7 +12,7 @@ namespace Lind.DDD.Manager
     public class DeptTree : DataTree<WebDepartments>
     {
         public DeptTree()
-            : base(new ManagerEfRepository<WebDepartments>().GetModel()
+            : base(new ManagerEfRepository<WebDepartments>().GetModel(i=>i.DataStatus==Domain.Status.Normal)
                                                             .OrderBy(i => i.SortNumber)
                                                             .ToList())
         {

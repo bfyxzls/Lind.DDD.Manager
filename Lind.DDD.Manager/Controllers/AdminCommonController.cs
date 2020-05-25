@@ -80,7 +80,7 @@ namespace Lind.DDD.Manager.Controllers
         public string TopMenu()
         {
 
-            var menu = new DataTree<WebManageMenus>(menuRepository.GetModel(i => i.IsDisplayMenuTree && MenuIdArr.Contains(i.Id))
+            var menu = new DataTree<WebManageMenus>(menuRepository.GetModel(i => i.IsDisplayMenuTree && MenuIdArr.Contains(i.Id) &&  i.DataStatus == Domain.Status.Normal)
                                                                   .OrderBy(i => i.SortNumber)
                                                                   .ToList());
 

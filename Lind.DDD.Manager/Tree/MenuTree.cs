@@ -20,7 +20,7 @@ namespace Lind.DDD.Manager
 
         }
         public MenuTree()
-            : this(i => true)
+            : this(i => i.DataStatus == Domain.Status.Normal)
         {
 
         }

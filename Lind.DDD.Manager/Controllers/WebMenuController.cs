@@ -18,9 +18,9 @@ namespace Lind.DDD.Manager.Controllers
         [ActionAuthority(Authority.Detail), ManagerActionLoggerAttribute("菜单列表")]
         public ActionResult Index()
         {
-            return View(menuRepository.GetModel().ToList());
+            return View(menuRepository.GetModel().Where(i=>i.DataStatus == Lind.DDD.Domain.Status.Normal).ToList());
         }
-
+        
         public ActionResult Details(int id)
         {
             return View();

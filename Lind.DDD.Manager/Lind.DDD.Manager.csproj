@@ -440,6 +440,7 @@
     <Content Include="Views\LindAdmin\AdminCommon\LogOn.cshtml" />
     <Content Include="Views\LindAdmin\Shared\_LayoutInit.cshtml" />
     <None Include="Properties\PublishProfiles\后台框架.pubxml" />
+    <Content Include="readme.md" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
